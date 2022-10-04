@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RockPaperScissors | Sebastian Guerrero</title>
+    <meta
+      name="description"
+      content="Rock, Paper and Scissors Game. Enjoy it."
+    />
+    <link rel="canonical" href="https://wesdell.github.io/rockpaperscissors/" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Ubuntu:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      rel="icon"
+      href="https://wesdell.github.io/rockpaperscissors/./assets/favicon.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="https://wesdell.github.io/rockpaperscissors/./assets/favicon.png"
+    />
+    <meta name="theme-color" content="#395b64" />
+    <meta name="twitter:card" content="summary" />
+    <meta
+      property="og:title"
+      name="twitter:title"
+      content="RockPaperScissors | Sebastian Guerrero"
+    />
+    <meta
+      property="og:image"
+      name="twitter:image"
+      content="https://wesdell.github.io/rockpaperscissors/./assets/game.png"
+    />
+    <meta
+      property="og:url"
+      name="twitter:url"
+      content="https://wesdell.github.io/rockpaperscissors/"
+    />
+    <meta
+      property="og:description"
+      name="twitter:description"
+      content="Rock, Paper and Scissors Game. Enjoy it."
+    />
+    <meta property="og:type" content="website" />
+  </head>
+  <body>
+    <main>
+      <h1>Rock Paper and Scissors Game</h1>
+      <div class="winner">...</div>
+      <div class="container">
+        <div class="game-stage">
+          <div class="user-possibilities">
+            <h2>User</h2>
+            <button>
+              <img
+                id="rock"
+                class="user-option"
+                src="./assets/rock.png"
+                alt="Rock hand"
+              />
+            </button>
+            <button>
+              <img
+                id="paper"
+                class="user-option"
+                src="./assets/paper.png"
+                alt="Paper hand"
+              />
+            </button>
+            <button>
+              <img
+                id="scissors"
+                class="user-option"
+                src="./assets/scissors.png"
+                alt="Scissors hand"
+              />
+            </button>
+          </div>
+          <div class="machine-possibilities">
+            <h2>Machine</h2>
+            <img class="m-rock" src="./assets/rock.png" alt="Rock hand" />
+            <img class="m-paper" src="./assets/paper.png" alt="Paper hand" />
+            <img
+              class="m-scissors"
+              src="./assets/scissors.png"
+              alt="Scissors hand"
+            />
+          </div>
+        </div>
+        <div class="btn-container">
+          <button id="reset" class="btn btn-reset" disabled>Reset Game</button>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer-content">
+        <small
+          >Developed and designed by Edwin Sebastián Guerrero Pesántez. &copy;
+          2022. All rights reserved.</small
+        >
+      </div>
+    </footer>
+    <script defer src="./index.js"></script>
+  </body>
+</html>

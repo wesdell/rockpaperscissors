@@ -1,0 +1,136 @@
+:root {
+  --primary: #395b64;
+  --secondary: #a5c9ca;
+  --secondary-light: #e7f6f2;
+  --terciary: #2c3333;
+  --white: #f4f5f0;
+  --max-width: 1200px;
+}
+html {
+  box-sizing: border-box;
+  font-family: "Press Start 2P", cursive;
+  font-size: 16px;
+  overflow-x: hidden;
+  height: 100%;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+body {
+  overflow-x: hidden;
+  height: 100%;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(var(--secondary), var(--secondary-light));
+  padding-bottom: 5rem;
+}
+h1 {
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  margin-top: 1rem;
+  padding: 0 0.5rem;
+  color: var(--terciary);
+}
+h2 {
+  letter-spacing: 0.3rem;
+  font-size: 0.7rem;
+  text-align: center;
+  color: var(--terciary);
+  margin: 0;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+button {
+  border: 0;
+  outline: none;
+  background-color: transparent;
+}
+button:disabled {
+  pointer-events: none;
+}
+.btn {
+  display: inline-block;
+  padding: 0.5rem 2rem;
+  border-radius: 0.3rem;
+  background-color: var(--terciary);
+  color: var(--white);
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+}
+.btn:hover {
+  background-color: var(--primary);
+  color: var(--secondary-light);
+}
+
+.container {
+  margin: 0 auto;
+  max-width: var(--max-width);
+}
+.winner {
+  text-align: center;
+  margin-top: 1rem;
+}
+.game-stage {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 1rem;
+}
+.user-possibilities,
+.machine-possibilities {
+  display: grid;
+  grid-template-columns: repeat(1, 6rem);
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+.user-option {
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+.user-option:hover {
+  filter: opacity(60%);
+}
+.selected {
+  background-color: var(--secondary);
+  border-radius: 20%;
+}
+.btn-container {
+  text-align: center;
+  margin: 0 auto;
+}
+.btn-reset {
+  margin-top: 1.5rem;
+}
+.footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: var(--secondary);
+  text-align: justify;
+  padding: 1rem 0;
+}
+.footer-content {
+  text-align: center;
+  font-size: 0.5rem;
+  color: var(--terciary);
+}
+@media screen and (min-width: 768px) {
+  .user-possibilities,
+  .machine-possibilities {
+    grid-template-columns: repeat(1, 8rem);
+  }
+  .winner {
+    margin-top: 1.5rem;
+  }
+  .game-stage {
+    margin-top: 2.5rem;
+  }
+}
