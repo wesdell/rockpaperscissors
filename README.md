@@ -1,5 +1,23 @@
-# Rock Paper and Scissors Game. Enjoy it.
+# RockPapersScissors
 
-Respository of an online game developed by @wesdell
+Click here for live demo: [Game](https://wesdell.github.io/rockpaperscissors/)
 
-- [Online Game](https://wesdell.github.io/rockpaperscissors/)
+## About the project:
+
+Rock Papers and Scissors is an oline game.
+
+![Project image](https://github.com/wesdell/rockpaperscissors/blob/gh-pages/assets/rockpaperscissors.png?raw=true)
+
+## Common functionalities are:
+
+- Users can play with a random and competitive machine
+
+## Build with:
+
+- HTML
+- CSS
+- JavaScript
+
+## Key concepts:
+
+- Online Game
